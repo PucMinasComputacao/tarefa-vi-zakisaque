@@ -1,0 +1,113 @@
+body {background-color: rgb(218, 218, 218);}
+h1 {font-size: xx-large;}
+H1 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+H1 {font-style: BOLD;}
+h1 {text-align: center;}
+
+h2 {text-align: center;}
+h2 {color: rgb(0, 0, 0);}
+h2 {text-decoration: underline;}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    text-decoration: none;
+}
+a {text-decoration: none;}
+
+#menutoggle {
+    display: none;
+}
+
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#menutoggle:checked ~ .menu {
+    left: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+}
+
+button {background-color: rgb(255, 255, 255);}
+button {text-align: justify;}
+
+.cabecalho {
+    background: rgb(0, 0, 0);
+    font-style: bold;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div.{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.card {
+    padding: 10px;
+    border: 05px solid #000000;
+}
+
+
+
+button {color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.rodape {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho {
+        background-color: rgb(27, 27, 27);
+    }
+    
+}
